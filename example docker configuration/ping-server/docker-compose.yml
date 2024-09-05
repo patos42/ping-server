@@ -2,6 +2,9 @@ version: '3.4'
 
 services:
   ping-server-service:
+    build:
+      context: ../../
+      dockerfile: Dockerfile
     container_name: ping-server
     image: ping-server:latest #uses local build
     #image: 10.11.12.54:5000/ping-server:latest
